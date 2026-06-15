@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>聯絡我們 | SOLEVIBE ATELIER</title>
+  <meta name="description" content="聯絡 SOLEVIBE ATELIER。我們提供專業的尺碼諮詢、售後退換服務及實體概念店預約。歡迎隨時填寫表單與我們聯繫。">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation Header -->
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo-link" id="site-logo">
+        <img src="assets/images/logo.svg" alt="SOLEVIBE ATELIER Logo">
+      </a>
+      
+      <nav class="nav-menu" id="nav-menu">
+        <a href="index.html" class="nav-link">首頁</a>
+        <a href="about.html" class="nav-link">品牌故事</a>
+        <a href="running.html" class="nav-link">跑步鞋</a>
+        <a href="casual.html" class="nav-link">休閒鞋</a>
+        <a href="lady.html" class="nav-link">淑女鞋</a>
+        <a href="hiking.html" class="nav-link">登山鞋</a>
+        <a href="contact.html" class="nav-link active">聯絡我們</a>
+      </nav>
+
+      <div class="nav-icons">
+        <div class="icon-btn" id="cart-btn">
+          <i class="ri-shopping-bag-line"></i>
+          <span class="cart-count" id="cart-count">0</span>
+        </div>
+        <div class="mobile-toggle" id="mobile-toggle">
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Contact Section -->
+  <section class="container" style="min-height: calc(100vh - 80px);">
+    <div class="contact-layout">
+      <!-- Contact Details Block -->
+      <div class="contact-info-block">
+        <span class="section-subtitle">Get in Touch</span>
+        <h1>與我們聯絡</h1>
+        <p>不論您是需要選鞋指南、尺碼諮詢、售後退換貨協助，或是想預約實體概念店的專屬試穿體驗，我們的美學顧問都隨時為您提供協助。</p>
+        
+        <div class="contact-details">
+          <!-- Item 1 -->
+          <div class="contact-detail-item">
+            <div class="contact-icon"><i class="ri-map-pin-line"></i></div>
+            <div class="contact-detail-content">
+              <h3>台北概念旗艦店</h3>
+              <p>台北市大安區敦化南路一段 100 號 1 樓</p>
+            </div>
+          </div>
+          <!-- Item 2 -->
+          <div class="contact-detail-item">
+            <div class="contact-icon"><i class="ri-phone-line"></i></div>
+            <div class="contact-detail-content">
+              <h3>諮詢專線</h3>
+              <p>+886 (02) 2712 3456</p>
+            </div>
+          </div>
+          <!-- Item 3 -->
+          <div class="contact-detail-item">
+            <div class="contact-icon"><i class="ri-mail-line"></i></div>
+            <div class="contact-detail-content">
+              <h3>電子郵件</h3>
+              <p>concierge@solevibe-atelier.com</p>
+            </div>
+          </div>
+          <!-- Item 4 -->
+          <div class="contact-detail-item">
+            <div class="contact-icon"><i class="ri-time-line"></i></div>
+            <div class="contact-detail-content">
+              <h3>概念店營業時間</h3>
+              <p>週一至週日：12:00 PM - 9:30 PM</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Form Block -->
+      <div class="contact-form-block">
+        <form class="contact-form" onsubmit="event.preventDefault(); alert('訊息已成功發送！我們的顧問會在 24 小時內聯絡您。'); this.reset();">
+          <h2>發送訊息</h2>
+          
+          <div class="form-group">
+            <label for="name" class="form-label">您的姓名</label>
+            <input type="text" id="name" class="form-control" placeholder="請輸入姓名" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email" class="form-label">電子郵件</label>
+            <input type="email" id="email" class="form-control" placeholder="example@email.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="phone" class="form-label">聯絡電話 (選填)</label>
+            <input type="tel" id="phone" class="form-control" placeholder="0912-345678">
+          </div>
+
+          <div class="form-group">
+            <label for="message" class="form-label">您的訊息</label>
+            <textarea id="message" class="form-control" placeholder="請填寫您想要詢問的事項..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%;">發送訊息</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/images/logo.svg" alt="SOLEVIBE ATELIER" class="footer-brand-svg">
+          <p>以簡約的設計語言，詮釋足尖上的奢華美學。專注細節，用心打造每一雙陪伴您的優雅履物。</p>
+        </div>
+        
+        <div>
+          <h4 class="footer-title">系列選單</h4>
+          <ul class="footer-links">
+            <li><a href="running.html">專業跑步鞋</a></li>
+            <li><a href="casual.html">都會休閒鞋</a></li>
+            <li><a href="lady.html">優雅淑女鞋</a></li>
+            <li><a href="hiking.html">機能登山鞋</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">關於品牌</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">品牌故事</a></li>
+            <li><a href="about.html#values">核心理念</a></li>
+            <li><a href="contact.html">實體店面</a></li>
+            <li><a href="contact.html">聯絡我們</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-newsletter">
+          <h4 class="footer-title">訂閱美學週報</h4>
+          <p>訂閱以獲取最新的獨家系列發佈消息與獨家禮遇優惠。</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('感謝您的訂閱！');">
+            <input type="email" placeholder="您的電子郵件地址" class="newsletter-input" required>
+            <button type="submit" class="newsletter-btn">訂閱</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 SOLEVIBE ATELIER. All rights reserved. 僅供展示用途。</p>
+        <div class="footer-bottom-links">
+          <a href="#">隱私權政策</a>
+          <a href="#">服務條款</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/products.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

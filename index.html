@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SOLEVIBE ATELIER | 簡約美學鞋專賣店</title>
+  <meta name="description" content="SOLEVIBE ATELIER 致力於打造極致簡約、舒適與時尚兼具的高端鞋履。無論是專業跑步鞋、都會休閒鞋、優雅淑女鞋或機能登山鞋，我們皆以匠心工藝完美呈現。">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation Header -->
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo-link" id="site-logo">
+        <img src="assets/images/logo.svg" alt="SOLEVIBE ATELIER Logo">
+      </a>
+      
+      <nav class="nav-menu" id="nav-menu">
+        <a href="index.html" class="nav-link active">首頁</a>
+        <a href="about.html" class="nav-link">品牌故事</a>
+        <a href="running.html" class="nav-link">跑步鞋</a>
+        <a href="casual.html" class="nav-link">休閒鞋</a>
+        <a href="lady.html" class="nav-link">淑女鞋</a>
+        <a href="hiking.html" class="nav-link">登山鞋</a>
+        <a href="contact.html" class="nav-link">聯絡我們</a>
+      </nav>
+
+      <div class="nav-icons">
+        <div class="icon-btn" id="cart-btn">
+          <i class="ri-shopping-bag-line"></i>
+          <span class="cart-count" id="cart-count">0</span>
+        </div>
+        <div class="mobile-toggle" id="mobile-toggle">
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-bg-overlay"></div>
+    <div class="container" style="position: relative; z-index: 2; width: 100%;">
+      <div class="hero-content">
+        <span class="hero-subtitle">SOLEVIBE ATELIER / 2026 Collection</span>
+        <h1 class="hero-title">步入簡約，<br>定義生活美學</h1>
+        <p class="hero-desc">拋開繁瑣的設計，回歸雙足最初的渴望。精選義大利小牛皮與機能材質，將極簡主義融入行走之間的每一刻。</p>
+        <div class="hero-actions">
+          <a href="casual.html" class="btn btn-primary">探索系列</a>
+          <a href="about.html" class="btn btn-outline" style="margin-left: 16px;">關於我們</a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-image-container">
+      <img src="assets/images/casual-1.jpg" alt="Featured Urban Sneaker">
+    </div>
+  </section>
+
+  <!-- Categories Showcase -->
+  <section class="home-categories">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Fine Curations</span>
+        <h2 class="section-title">精選四大分類</h2>
+      </div>
+      
+      <div class="category-grid">
+        <!-- Running -->
+        <div class="category-card">
+          <img src="assets/images/run-1.jpg" alt="Running Shoes" class="category-img">
+          <div class="category-overlay"></div>
+          <div class="category-info">
+            <h3 class="category-name">跑步鞋系列</h3>
+            <a href="running.html" class="category-link">立刻前往</a>
+          </div>
+        </div>
+        <!-- Casual -->
+        <div class="category-card">
+          <img src="assets/images/casual-2.jpg" alt="Casual Shoes" class="category-img">
+          <div class="category-overlay"></div>
+          <div class="category-info">
+            <h3 class="category-name">休閒鞋系列</h3>
+            <a href="casual.html" class="category-link">立刻前往</a>
+          </div>
+        </div>
+        <!-- Lady -->
+        <div class="category-card">
+          <img src="assets/images/lady-1.jpg" alt="Lady Shoes" class="category-img">
+          <div class="category-overlay"></div>
+          <div class="category-info">
+            <h3 class="category-name">淑女鞋系列</h3>
+            <a href="lady.html" class="category-link">立刻前往</a>
+          </div>
+        </div>
+        <!-- Hiking -->
+        <div class="category-card">
+          <img src="assets/images/hike-1.jpg" alt="Hiking Shoes" class="category-img">
+          <div class="category-overlay"></div>
+          <div class="category-info">
+            <h3 class="category-name">登山鞋系列</h3>
+            <a href="hiking.html" class="category-link">立刻前往</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Products Showcase -->
+  <section class="featured-showcase">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Exquisite Selection</span>
+        <h2 class="section-title">熱銷明星單品</h2>
+      </div>
+      
+      <div class="products-grid">
+        <!-- Product 1 (Run) -->
+        <div class="product-card">
+          <span class="product-badge">熱銷</span>
+          <div class="product-img-wrapper">
+            <img src="assets/images/run-1.jpg" alt="AeroGlide Elite">
+            <div class="product-actions">
+              <a href="product.html?id=run-1" class="action-btn">查看詳情</a>
+              <button onclick="addToCart('run-1')" class="action-btn">加入購物袋</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-cat">跑步鞋區</span>
+            <h3 class="product-name"><a href="product.html?id=run-1">AeroGlide Elite</a></h3>
+            <div class="product-footer">
+              <span class="product-price">NT$ 5,400</span>
+              <div class="product-rating">
+                <i class="ri-star-fill"></i>
+                <span>4.8</span>
+                <span class="rating-count">(124)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2 (Casual) -->
+        <div class="product-card">
+          <span class="product-badge">推薦</span>
+          <div class="product-img-wrapper">
+            <img src="assets/images/casual-1.jpg" alt="UrbanWalk Classic">
+            <div class="product-actions">
+              <a href="product.html?id=casual-1" class="action-btn">查看詳情</a>
+              <button onclick="addToCart('casual-1')" class="action-btn">加入購物袋</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-cat">休閒鞋區</span>
+            <h3 class="product-name"><a href="product.html?id=casual-1">UrbanWalk Classic</a></h3>
+            <div class="product-footer">
+              <span class="product-price">NT$ 3,600</span>
+              <div class="product-rating">
+                <i class="ri-star-fill"></i>
+                <span>4.6</span>
+                <span class="rating-count">(210)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3 (Lady) -->
+        <div class="product-card">
+          <span class="product-badge">熱銷</span>
+          <div class="product-img-wrapper">
+            <img src="assets/images/lady-2.jpg" alt="GraceFlat">
+            <div class="product-actions">
+              <a href="product.html?id=lady-2" class="action-btn">查看詳情</a>
+              <button onclick="addToCart('lady-2')" class="action-btn">加入購物袋</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-cat">淑女鞋區</span>
+            <h3 class="product-name"><a href="product.html?id=lady-2">GraceFlat</a></h3>
+            <div class="product-footer">
+              <span class="product-price">NT$ 3,900</span>
+              <div class="product-rating">
+                <i class="ri-star-fill"></i>
+                <span>4.9</span>
+                <span class="rating-count">(167)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 4 (Hiking) -->
+        <div class="product-card">
+          <span class="product-badge">極限</span>
+          <div class="product-img-wrapper">
+            <img src="assets/images/hike-1.jpg" alt="SummitPeak Waterproof">
+            <div class="product-actions">
+              <a href="product.html?id=hike-1" class="action-btn">查看詳情</a>
+              <button onclick="addToCart('hike-1')" class="action-btn">加入購物袋</button>
+            </div>
+          </div>
+          <div class="product-info">
+            <span class="product-cat">登山鞋區</span>
+            <h3 class="product-name"><a href="product.html?id=hike-1">SummitPeak Waterproof</a></h3>
+            <div class="product-footer">
+              <span class="product-price">NT$ 6,300</span>
+              <div class="product-rating">
+                <i class="ri-star-fill"></i>
+                <span>4.9</span>
+                <span class="rating-count">(105)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Brand Story / Philosophy Section -->
+  <section class="brand-story">
+    <div class="container">
+      <div class="story-grid">
+        <div class="story-img-frame">
+          <img src="assets/images/lady-4.jpg" alt="Shoe Craftsmanship Story">
+        </div>
+        <div class="story-content">
+          <span class="section-subtitle">Since 2018</span>
+          <h2>精緻製鞋工藝，<br>為優雅漫步而生</h2>
+          <p>SOLEVIBE ATELIER 創立於對純粹之美的追尋。我們相信鞋子不僅是行走的工具，更是展現個人美學態度的核心。每一雙 SOLEVIBE 都經歷超過 40 道手工工序，採用環境友善的皮革與高級科技材料，務求將輕量舒適與高雅線條融為一體，伴您走過人生的每一個精彩轉折點。</p>
+          <a href="about.html" class="btn btn-outline">了解我們的故事</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/images/logo.svg" alt="SOLEVIBE ATELIER" class="footer-brand-svg">
+          <p>以簡約的設計語言，詮釋足尖上的奢華美學。專注細節，用心打造每一雙陪伴您的優雅履物。</p>
+        </div>
+        
+        <div>
+          <h4 class="footer-title">系列選單</h4>
+          <ul class="footer-links">
+            <li><a href="running.html">專業跑步鞋</a></li>
+            <li><a href="casual.html">都會休閒鞋</a></li>
+            <li><a href="lady.html">優雅淑女鞋</a></li>
+            <li><a href="hiking.html">機能登山鞋</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">關於品牌</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">品牌故事</a></li>
+            <li><a href="about.html#values">核心理念</a></li>
+            <li><a href="contact.html">實體店面</a></li>
+            <li><a href="contact.html">聯絡我們</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-newsletter">
+          <h4 class="footer-title">訂閱美學週報</h4>
+          <p>訂閱以獲取最新的獨家系列發佈消息與獨家禮遇優惠。</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('感謝您的訂閱！');">
+            <input type="email" placeholder="您的電子郵件地址" class="newsletter-input" required>
+            <button type="submit" class="newsletter-btn">訂閱</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 SOLEVIBE ATELIER. All rights reserved. 僅供展示用途。</p>
+        <div class="footer-bottom-links">
+          <a href="#">隱私權政策</a>
+          <a href="#">服務條款</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/products.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

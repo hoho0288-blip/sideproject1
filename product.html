@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>商品詳情 | SOLEVIBE ATELIER</title>
+  <meta name="description" content="查看 SOLEVIBE ATELIER 精選高端鞋履的設計細節、尺碼與規格。">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation Header -->
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo-link" id="site-logo">
+        <img src="assets/images/logo.svg" alt="SOLEVIBE ATELIER Logo">
+      </a>
+      
+      <nav class="nav-menu" id="nav-menu">
+        <a href="index.html" class="nav-link">首頁</a>
+        <a href="about.html" class="nav-link">品牌故事</a>
+        <a href="running.html" class="nav-link">跑步鞋</a>
+        <a href="casual.html" class="nav-link">休閒鞋</a>
+        <a href="lady.html" class="nav-link">淑女鞋</a>
+        <a href="hiking.html" class="nav-link">登山鞋</a>
+        <a href="contact.html" class="nav-link">聯絡我們</a>
+      </nav>
+
+      <div class="nav-icons">
+        <div class="icon-btn" id="cart-btn">
+          <i class="ri-shopping-bag-line"></i>
+          <span class="cart-count" id="cart-count">0</span>
+        </div>
+        <div class="mobile-toggle" id="mobile-toggle">
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Product Detail Section -->
+  <section class="container">
+    <div class="product-detail-layout">
+      
+      <!-- Left: Product Image Gallery -->
+      <div class="product-gallery">
+        <img id="p-img" src="" alt="商品圖片">
+      </div>
+
+      <!-- Right: Product Information & Purchase Selector -->
+      <div class="product-meta">
+        <span class="product-cat"><a id="p-category" href="#">分類</a></span>
+        <h1 id="p-name">商品名稱</h1>
+        <div class="product-meta-price" id="p-price">NT$ 0</div>
+        
+        <p class="product-meta-desc" id="p-desc">
+          載入商品描述中...
+        </p>
+
+        <div class="divider"></div>
+
+        <!-- Size Selector -->
+        <div>
+          <span class="selector-title">選擇尺碼 (EUR)</span>
+          <div class="size-selector">
+            <button class="size-btn" onclick="selectSize(this)">37</button>
+            <button class="size-btn active" onclick="selectSize(this)">38</button>
+            <button class="size-btn" onclick="selectSize(this)">39</button>
+            <button class="size-btn" onclick="selectSize(this)">40</button>
+            <button class="size-btn" onclick="selectSize(this)">41</button>
+            <button class="size-btn" onclick="selectSize(this)">42</button>
+            <button class="size-btn" onclick="selectSize(this)">43</button>
+            <button class="size-btn" onclick="selectSize(this)">44</button>
+          </div>
+        </div>
+
+        <!-- Quantity & Buy Actions -->
+        <div class="purchase-actions">
+          <div class="quantity-selector">
+            <button class="qty-btn" id="qty-minus" onclick="adjustQty(-1)">-</button>
+            <input type="text" id="qty-input" class="qty-input" value="1" readonly>
+            <button class="qty-btn" id="qty-plus" onclick="adjustQty(1)">+</button>
+          </div>
+          
+          <button class="btn btn-primary buy-btn" id="buy-now-btn">立即購買</button>
+        </div>
+
+        <button class="btn btn-outline" id="add-cart-btn" style="width: 100%;">加入購物袋</button>
+
+        <div class="divider"></div>
+
+        <!-- Tabs for Features and Specifications -->
+        <div class="product-info-tabs">
+          <div class="tab-nav">
+            <span class="tab-title active" onclick="switchTab('tab-features')">商品特色</span>
+            <span class="tab-title" onclick="switchTab('tab-specs')">規格參數</span>
+            <span class="tab-title" onclick="switchTab('tab-shipping')">配送與退換</span>
+          </div>
+
+          <!-- Features Tab Pane -->
+          <div class="tab-pane active" id="tab-features">
+            <ul id="features-list">
+              <li>載入特點中...</li>
+            </ul>
+          </div>
+
+          <!-- Specs Tab Pane -->
+          <div class="tab-pane" id="tab-specs">
+            <div class="spec-list" id="specs-list">
+              <!-- Specs loaded dynamically -->
+            </div>
+          </div>
+
+          <!-- Shipping Tab Pane -->
+          <div class="tab-pane" id="tab-shipping">
+            <p style="color: var(--text-secondary); line-height: 1.8;">
+              <strong>台灣本島配送：</strong><br>
+              - 宅配到府（順豐速運/黑貓宅急便）：出貨後 1-2 個工作天送達，全館免運費。<br>
+              - 超商取貨付款（7-11/全家）：出貨後 2-3 個工作天送達。<br><br>
+              <strong>退換貨承諾：</strong><br>
+              我們提供商品收到後 <strong>7 天無理由鑑賞期（非試用期）</strong>，在鞋盒完整、無穿著外出磨損痕跡下，均可免費辦理退貨或更換尺碼乙次。
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/images/logo.svg" alt="SOLEVIBE ATELIER" class="footer-brand-svg">
+          <p>以簡約的設計語言，詮釋足尖上的奢華美學。專注細節，用心打造每一雙陪伴您的優雅履物。</p>
+        </div>
+        
+        <div>
+          <h4 class="footer-title">系列選單</h4>
+          <ul class="footer-links">
+            <li><a href="running.html">專業跑步鞋</a></li>
+            <li><a href="casual.html">都會休閒鞋</a></li>
+            <li><a href="lady.html">優雅淑女鞋</a></li>
+            <li><a href="hiking.html">機能登山鞋</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">關於品牌</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">品牌故事</a></li>
+            <li><a href="about.html#values">核心理念</a></li>
+            <li><a href="contact.html">實體店面</a></li>
+            <li><a href="contact.html">聯絡我們</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-newsletter">
+          <h4 class="footer-title">訂閱美學週報</h4>
+          <p>訂閱以獲取最新的獨家系列發佈消息與獨家禮遇優惠。</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('感謝您的訂閱！');">
+            <input type="email" placeholder="您的電子郵件地址" class="newsletter-input" required>
+            <button type="submit" class="newsletter-btn">訂閱</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 SOLEVIBE ATELIER. All rights reserved. 僅供展示用途。</p>
+        <div class="footer-bottom-links">
+          <a href="#">隱私權政策</a>
+          <a href="#">服務條款</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/products.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    // Inline interactivity helper for Product Details Page
+    function selectSize(button) {
+      document.querySelectorAll(".size-btn").forEach(btn => btn.classList.remove("active"));
+      button.classList.add("active");
+    }
+
+    function adjustQty(amount) {
+      const qtyInput = document.getElementById("qty-input");
+      if (qtyInput) {
+        let val = parseInt(qtyInput.value) || 1;
+        val += amount;
+        if (val < 1) val = 1;
+        if (val > 10) val = 10; // limit 10 items max
+        qtyInput.value = val;
+      }
+    }
+  </script>
+</body>
+</html>
